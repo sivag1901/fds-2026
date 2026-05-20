@@ -1,0 +1,96 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "color": {
+    "violet": {
+      "01": { "$value": "#f0ecfe", "$type": "color", "description": "Violet — lightest tint" },
+      "02": { "$value": "#ddd5fd", "$type": "color" },
+      "03": { "$value": "#c0adfb", "$type": "color" },
+      "04": { "$value": "#a386f9", "$type": "color" },
+      "05": { "$value": "#8560f8", "$type": "color" },
+      "06": { "$value": "#623cf6", "$type": "color", "description": "Violet — base" },
+      "07": { "$value": "#4e2fcc", "$type": "color" },
+      "08": { "$value": "#3b23a2", "$type": "color" },
+      "09": { "$value": "#291878", "$type": "color" },
+      "10": { "$value": "#180e4f", "$type": "color" },
+      "11": { "$value": "#0d0829", "$type": "color", "description": "Violet — darkest shade" }
+    },
+    "blue": {
+      "01": { "$value": "#eff6ff", "$type": "color", "description": "Blue — lightest tint" },
+      "02": { "$value": "#dbeafe", "$type": "color" },
+      "03": { "$value": "#bedbff", "$type": "color" },
+      "04": { "$value": "#8ec5ff", "$type": "color" },
+      "05": { "$value": "#51a2ff", "$type": "color" },
+      "06": { "$value": "#2b7fff", "$type": "color", "description": "Blue — base" },
+      "07": { "$value": "#155dfc", "$type": "color" },
+      "08": { "$value": "#1447e6", "$type": "color" },
+      "09": { "$value": "#193cb8", "$type": "color" },
+      "10": { "$value": "#1c398e", "$type": "color" },
+      "11": { "$value": "#162456", "$type": "color", "description": "Blue — darkest shade" }
+    },
+    "yellow": {
+      "01": { "$value": "#fefce8", "$type": "color", "description": "Yellow — lightest tint" },
+      "02": { "$value": "#fef9c2", "$type": "color" },
+      "03": { "$value": "#fff085", "$type": "color" },
+      "04": { "$value": "#ffdf20", "$type": "color" },
+      "05": { "$value": "#fdc700", "$type": "color", "description": "Yellow — base" },
+      "06": { "$value": "#f0b100", "$type": "color" },
+      "07": { "$value": "#d08700", "$type": "color" },
+      "08": { "$value": "#a65f00", "$type": "color" },
+      "09": { "$value": "#894b00", "$type": "color" },
+      "10": { "$value": "#733e0a", "$type": "color" },
+      "11": { "$value": "#432004", "$type": "color", "description": "Yellow — darkest shade" }
+    },
+    "green": {
+      "01": { "$value": "#f0fdf4", "$type": "color", "description": "Green — lightest tint" },
+      "02": { "$value": "#dcfce7", "$type": "color" },
+      "03": { "$value": "#b9f8cf", "$type": "color" },
+      "04": { "$value": "#7bf1a8", "$type": "color" },
+      "05": { "$value": "#05df72", "$type": "color" },
+      "06": { "$value": "#00c950", "$type": "color", "description": "Green — base" },
+      "07": { "$value": "#00a63e", "$type": "color" },
+      "08": { "$value": "#008236", "$type": "color" },
+      "09": { "$value": "#016630", "$type": "color" },
+      "10": { "$value": "#0d542b", "$type": "color" },
+      "11": { "$value": "#032e15", "$type": "color", "description": "Green — darkest shade" }
+    },
+    "orange": {
+      "01": { "$value": "#fff7ed", "$type": "color", "description": "Orange — lightest tint" },
+      "02": { "$value": "#ffedd4", "$type": "color" },
+      "03": { "$value": "#ffd6a7", "$type": "color" },
+      "04": { "$value": "#ffb86a", "$type": "color" },
+      "05": { "$value": "#ff8904", "$type": "color", "description": "Orange — base" },
+      "06": { "$value": "#ff6900", "$type": "color" },
+      "07": { "$value": "#f54900", "$type": "color" },
+      "08": { "$value": "#ca3500", "$type": "color" },
+      "09": { "$value": "#9f2d00", "$type": "color" },
+      "10": { "$value": "#7e2a0c", "$type": "color" },
+      "11": { "$value": "#441306", "$type": "color", "description": "Orange — darkest shade" }
+    },
+    "charcoal": {
+      "01": { "$value": "#f8fafc", "$type": "color", "description": "Charcoal — lightest tint" },
+      "02": { "$value": "#f1f5f9", "$type": "color" },
+      "03": { "$value": "#e2e8f0", "$type": "color" },
+      "04": { "$value": "#cad5e2", "$type": "color" },
+      "05": { "$value": "#90a1b9", "$type": "color" },
+      "06": { "$value": "#62748e", "$type": "color", "description": "Charcoal — base" },
+      "07": { "$value": "#45556c", "$type": "color" },
+      "08": { "$value": "#314158", "$type": "color" },
+      "09": { "$value": "#1d293d", "$type": "color" },
+      "10": { "$value": "#0f172b", "$type": "color" },
+      "11": { "$value": "#020618", "$type": "color", "description": "Charcoal — darkest shade" }
+    },
+    "grey": {
+      "01": { "$value": "#fafafa", "$type": "color", "description": "Grey — lightest tint" },
+      "02": { "$value": "#f5f5f5", "$type": "color" },
+      "03": { "$value": "#e5e5e5", "$type": "color" },
+      "04": { "$value": "#d4d4d4", "$type": "color" },
+      "05": { "$value": "#a1a1a1", "$type": "color" },
+      "06": { "$value": "#737373", "$type": "color", "description": "Grey — base" },
+      "07": { "$value": "#525252", "$type": "color" },
+      "08": { "$value": "#404040", "$type": "color" },
+      "09": { "$value": "#262626", "$type": "color" },
+      "10": { "$value": "#171717", "$type": "color" },
+      "11": { "$value": "#0a0a0a", "$type": "color", "description": "Grey — darkest shade" }
+    }
+  }
+}
