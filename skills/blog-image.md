@@ -1,5 +1,5 @@
 # FDS 2026 — Blog Image Skill File
-> Use this file as LLM context when generating blog featured images, article headers, social sharing cards, and in-article visuals for Facilio.
+> Use this file as LLM context when generating blog cover images, OG images, and in-article visuals for Facilio.
 
 ---
 
@@ -72,33 +72,23 @@ Blog images follow a clear visual hierarchy:
 ## Medium-Specific Rules
 
 ### Canvas Sizes
-Four supported blog image formats:
+Two supported blog image formats:
 
 | Format | Dimensions | Aspect ratio | Use |
 |--------|-----------|--------------|-----|
-| **Featured / OG** | 1200 × 630px | ~1.91:1 | Blog featured image, Open Graph (Facebook, LinkedIn) |
-| **Twitter card** | 1200 × 628px | ~1.91:1 | Twitter/X summary card with large image |
-| **Wide header** | 1600 × 900px | 16:9 | Full-width blog hero banner |
-| **Square** | 1080 × 1080px | 1:1 | Instagram, square social reposts |
+| **Cover / OG** | 1200 × 630px | ~1.91:1 | Blog cover image, Open Graph (Facebook, LinkedIn, social sharing) |
+| **In-article** | 1200 × 880px | ~1.36:1 | Images used inside the blog post body |
 
 ### Padding
-Minimum **48px on all sides** for all formats. No text or logo may appear outside this boundary.
+Minimum **48px on all sides** for both formats. No text or logo may appear outside this boundary.
 
 ```
-Featured / OG (1200 × 630):
+Cover / OG (1200 × 630):
   Safe content area: 1104 × 534px
   Origin of content: x: 48px, y: 48px
 
-Twitter card (1200 × 628):
-  Safe content area: 1104 × 532px
-  Origin of content: x: 48px, y: 48px
-
-Wide header (1600 × 900):
-  Safe content area: 1504 × 804px
-  Origin of content: x: 48px, y: 48px
-
-Square (1080 × 1080):
-  Safe content area: 984 × 984px
+In-article (1200 × 880):
+  Safe content area: 1104 × 784px
   Origin of content: x: 48px, y: 48px
 ```
 
