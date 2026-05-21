@@ -270,6 +270,72 @@ body, p { font-family: var(--fds-font-body); color: var(--fds-charcoal-08); }
 
 ---
 
+## Icons
+
+Use **Google Material Symbols** for all icons across every medium — web, PDF, poster, presentation, and blog images.
+
+### Spec
+
+| Property | Value |
+|----------|-------|
+| Library | Google Material Symbols |
+| Style | Outlined |
+| Weight | **300** |
+| Fill | 0 (unfilled) |
+| Grade | 0 |
+| Optical size | 24 (default) |
+
+**Icon choice:** Always pick the icon that semantically matches the content. Use the most widely-recognised, unambiguous symbol. Never approximate with a visually similar but semantically wrong icon.
+
+### Web — Loading the font
+
+```html
+<!-- In <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet" />
+```
+
+```html
+<!-- Usage -->
+<span class="material-symbols-outlined">bolt</span>
+<span class="material-symbols-outlined">settings</span>
+<span class="material-symbols-outlined">check_circle</span>
+```
+
+```css
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+```
+
+### Design / static use (Figma, PDF, poster, presentation)
+
+Export individual icon SVGs from [fonts.google.com/icons](https://fonts.google.com/icons) — set weight to **300**, style to **Outlined**. Do not use Filled or Rounded variants unless explicitly required.
+
+### Color rules for icons
+
+| Context | Icon color |
+|---------|-----------|
+| On white / light bg, neutral | `charcoal-06` or `charcoal-07` |
+| On white / light bg, primary action | `violet-06` |
+| On dark / charcoal bg | `white` or `charcoal-02` |
+| Status icon (success) | `green-06` |
+| Status icon (warning) | `yellow-05` |
+| Status icon (error/caution) | `orange-06` |
+| Inside a violet-filled circle | `white` |
+| Inside an accent-colored container | `white` |
+
+### Size guidelines
+
+| Medium | Inline icon | Standalone / feature icon | Icon in filled circle |
+|--------|-------------|---------------------------|-----------------------|
+| Web | 20–24px | 32–40px | 20px inside 40px circle |
+| Presentation | 32–40px | 48–64px | 28px inside 56px circle |
+| PDF | 16–20px | 24–32px | 16px inside 32px circle |
+| Poster | 40–56px | 64–96px | 40px inside 80px circle |
+| Blog image | 32–48px | 48–72px | 28–36px inside 56–72px circle |
+
+---
+
 ## Spacing
 
 ### Scale Rules
@@ -416,6 +482,7 @@ Danger Button:
 | `skills/poster.md` | Poster and large-format graphics |
 | `skills/pdf.md` | PDF documents and reports |
 | `skills/presentation.md` | Slide decks and presentations |
+| `skills/blog-image.md` | Blog cover images and in-article visuals |
 
 ---
 
@@ -429,6 +496,7 @@ For targeted generation, use the medium-specific file instead of this base file:
 | Poster | `skills/poster.md` | Event graphics, large-format visuals |
 | PDF | `skills/pdf.md` | Reports, brochures, data sheets |
 | Presentation | `skills/presentation.md` | Slide decks, pitch decks |
+| Blog image | `skills/blog-image.md` | Blog cover images, in-article visuals |
 
 Each medium file imports all rules from this base file and adds medium-specific overrides.
 

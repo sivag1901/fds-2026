@@ -40,6 +40,16 @@ Use `--fds-space-*` tokens as reference units. For print/large-format, scale the
 
 ---
 
+## Icons
+
+Use **Google Material Symbols, Outlined style, weight 300**. See `SKILL.md` → Icons for the full spec, color rules, and size guidelines.
+
+Poster icon sizes: **40–56px** inline/supporting, **64–96px** standalone/feature icons, **40px** inside an 80px filled circle.
+
+Export individual SVGs from [fonts.google.com/icons](https://fonts.google.com/icons) at weight 300, Outlined style.
+
+---
+
 ## Logo
 
 <!-- To be defined — which variant, sizing rules, placement, clear space for poster contexts -->

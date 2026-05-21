@@ -49,6 +49,16 @@ Presentations use generous spacing. Use `--fds-space-*` values as a reference ba
 
 ---
 
+## Icons
+
+Use **Google Material Symbols, Outlined style, weight 300**. See `SKILL.md` → Icons for the full spec, color rules, and size guidelines.
+
+Presentation icon sizes: **32–40px** inline/supporting, **48–64px** standalone/feature icons, **28px** inside a 56px filled circle.
+
+Export individual SVGs from [fonts.google.com/icons](https://fonts.google.com/icons) at weight 300, Outlined style.
+
+---
+
 ## Logo
 
 <!-- To be defined — slide master logo placement, sizing, dark vs. light variant per slide theme -->

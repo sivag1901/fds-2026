@@ -31,6 +31,19 @@ This file extends the base FDS 2026 system. All color, typography, and logo rule
 
 ---
 
+## Icons
+
+Use **Google Material Symbols, Outlined style, weight 300**. See `SKILL.md` → Icons for the full spec, color rules, and size guidelines.
+
+Web icon sizes: **20–24px** inline, **32–40px** standalone/feature icons, **20px** inside a 40px filled circle.
+
+Load via Google Fonts:
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet" />
+```
+
+---
+
 ## Layout & Grid
 
 <!-- To be filled in — container width, column system, breakpoints -->
