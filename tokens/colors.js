@@ -1,9 +1,9 @@
 /**
- * FDS 2026 — Tailwind CSS color config
- * Usage: spread into theme.colors or theme.extend.colors
+ * FDS 2026 — Facilio Design System Color Tokens
+ * Plain JavaScript module — no framework dependency.
+ * Import and use directly in any JS/TS project.
  */
 
-/** @type {import('tailwindcss').Config} */
 const fdsColors = {
   violet: {
     '01': '#f0ecfe',
@@ -83,6 +83,8 @@ const fdsColors = {
     '10': '#0f172b',
     '11': '#020618',
   },
+  white: '#ffffff',
+  black: '#000000',
   grey: {
     '01': '#fafafa',
     '02': '#f5f5f5',

@@ -91,6 +91,8 @@
       "09": { "$value": "#262626", "$type": "color" },
       "10": { "$value": "#171717", "$type": "color" },
       "11": { "$value": "#0a0a0a", "$type": "color", "description": "Grey — darkest shade" }
-    }
+    },
+    "white": { "$value": "#ffffff", "$type": "color", "description": "Neutral — pure white" },
+    "black": { "$value": "#000000", "$type": "color", "description": "Neutral — pure black, used for all titles and headings" }
   }
 }

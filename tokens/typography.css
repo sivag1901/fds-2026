@@ -1,0 +1,100 @@
+/**
+ * FDS 2026 — Facilio Design System Typography Tokens
+ *
+ * Font roles:
+ *   --fds-font-title  → Darker Grotesque  (h1–h4)
+ *   --fds-font-body   → Inter             (body copy, h5, h6)
+ *   --fds-font-mono   → IBM Plex Mono     (tags, numericals)
+ */
+
+/* ─── Font Face Declarations ─── */
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url('../fonts/Darker_Grotesque/DarkerGrotesque-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── Font Role Tokens ─── */
+
+:root {
+  --fds-font-title: 'Darker Grotesque', sans-serif;
+  --fds-font-body:  'Inter', sans-serif;
+  --fds-font-mono:  'IBM Plex Mono', monospace;
+}
+
+/* ─── Base Application ─── */
+
+h1, h2, h3, h4 {
+  font-family: var(--fds-font-title);
+}
+
+h5, h6,
+body,
+p, span, a, li, label, input, textarea, select, button {
+  font-family: var(--fds-font-body);
+}
+
+code, kbd, samp,
+.fds-tag,
+.fds-numeral {
+  font-family: var(--fds-font-mono);
+}

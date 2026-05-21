@@ -1,0 +1,33 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "spacing": {
+    "4":   { "$value": "4px",   "$type": "dimension", "description": "4px — smallest unit" },
+    "8":   { "$value": "8px",   "$type": "dimension" },
+    "12":  { "$value": "12px",  "$type": "dimension" },
+    "16":  { "$value": "16px",  "$type": "dimension" },
+    "20":  { "$value": "20px",  "$type": "dimension" },
+    "24":  { "$value": "24px",  "$type": "dimension", "description": "24px — last 4px-step" },
+    "32":  { "$value": "32px",  "$type": "dimension", "description": "32px — first 8px-step" },
+    "40":  { "$value": "40px",  "$type": "dimension" },
+    "48":  { "$value": "48px",  "$type": "dimension" },
+    "56":  { "$value": "56px",  "$type": "dimension" },
+    "64":  { "$value": "64px",  "$type": "dimension" },
+    "72":  { "$value": "72px",  "$type": "dimension" },
+    "80":  { "$value": "80px",  "$type": "dimension" },
+    "88":  { "$value": "88px",  "$type": "dimension" },
+    "96":  { "$value": "96px",  "$type": "dimension" },
+    "104": { "$value": "104px", "$type": "dimension" },
+    "112": { "$value": "112px", "$type": "dimension" },
+    "120": { "$value": "120px", "$type": "dimension" },
+    "128": { "$value": "128px", "$type": "dimension" },
+    "136": { "$value": "136px", "$type": "dimension" },
+    "144": { "$value": "144px", "$type": "dimension" },
+    "152": { "$value": "152px", "$type": "dimension" },
+    "160": { "$value": "160px", "$type": "dimension" },
+    "168": { "$value": "168px", "$type": "dimension" },
+    "176": { "$value": "176px", "$type": "dimension" },
+    "184": { "$value": "184px", "$type": "dimension" },
+    "192": { "$value": "192px", "$type": "dimension" },
+    "200": { "$value": "200px", "$type": "dimension", "description": "200px — maximum spacing" }
+  }
+}

@@ -1,0 +1,42 @@
+/**
+ * FDS 2026 — Facilio Design System Spacing Tokens
+ *
+ * Scale rules:
+ *   4px multiples → up to 24px   (steps: 4 8 12 16 20 24)
+ *   8px multiples → 24px to 200px (steps: 32 40 48 … 200)
+ *   Maximum spacing: 200px
+ */
+
+:root {
+  /* ─── 4px steps (up to 24px) ─── */
+  --fds-space-4:   4px;
+  --fds-space-8:   8px;
+  --fds-space-12: 12px;
+  --fds-space-16: 16px;
+  --fds-space-20: 20px;
+  --fds-space-24: 24px;
+
+  /* ─── 8px steps (32px → 200px) ─── */
+  --fds-space-32:  32px;
+  --fds-space-40:  40px;
+  --fds-space-48:  48px;
+  --fds-space-56:  56px;
+  --fds-space-64:  64px;
+  --fds-space-72:  72px;
+  --fds-space-80:  80px;
+  --fds-space-88:  88px;
+  --fds-space-96:  96px;
+  --fds-space-104: 104px;
+  --fds-space-112: 112px;
+  --fds-space-120: 120px;
+  --fds-space-128: 128px;
+  --fds-space-136: 136px;
+  --fds-space-144: 144px;
+  --fds-space-152: 152px;
+  --fds-space-160: 160px;
+  --fds-space-168: 168px;
+  --fds-space-176: 176px;
+  --fds-space-184: 184px;
+  --fds-space-192: 192px;
+  --fds-space-200: 200px;
+}
