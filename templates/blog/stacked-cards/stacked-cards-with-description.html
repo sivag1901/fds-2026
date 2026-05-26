@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Stacked Cards with Description</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #111827;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 48px 40px;
+    }
+
+    .logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+      color: #fff;
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 36px;
+      max-width: 800px;
+    }
+
+    .grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 12px;
+      flex: 1;
+    }
+
+    .card {
+      background: #1E2B3D;
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .card-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #5B35D5;
+    }
+
+    .card-desc {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: #BCC3CF;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <span class="logo">facilio</span>
+    <div class="title">Top AI Use Cases in Facility Management 2025</div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">Improve Sustainability</div>
+        <div class="card-desc">Track energy use and reduce environmental impact</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Predict Failures</div>
+        <div class="card-desc">Use sensor data to prevent breakdowns before they occur</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Automate Work Orders</div>
+        <div class="card-desc">Trigger maintenance tasks without manual intervention</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Optimize Space</div>
+        <div class="card-desc">Analyze occupancy data to right-size your portfolio</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Reduce Costs</div>
+        <div class="card-desc">Identify inefficiencies across operations and vendors</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Ensure Compliance</div>
+        <div class="card-desc">Stay audit-ready with automated compliance tracking</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Track Assets</div>
+        <div class="card-desc">Monitor asset health, location, and lifecycle in real time</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Manage Vendors</div>
+        <div class="card-desc">Score vendor performance and streamline contracts</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

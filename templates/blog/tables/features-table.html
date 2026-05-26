@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Features Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #5B35D5;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px;
+    }
+
+    .logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 32px;
+    }
+
+    .table-container {
+      width: 100%;
+      flex: 1;
+      background: #1E2638;
+      border-radius: 20px;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .header-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+    }
+
+    .header-cell {
+      background: #2A3149;
+      border-radius: 8px;
+      padding: 16px 20px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .data-rows {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .data-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      flex: 1;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 2px 0;
+    }
+
+    .data-row:last-child {
+      border-bottom: none;
+    }
+
+    .data-cell {
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .cell-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      color: #BCC3CF;
+    }
+
+    .cell-text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: #E2E5EE;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <span class="logo">facilio</span>
+    <div class="title">Top AI Use Cases in FM</div>
+    <div class="table-container">
+      <div class="header-row">
+        <div class="header-cell">Strategy</div>
+        <div class="header-cell">Approach</div>
+        <div class="header-cell">Approach</div>
+      </div>
+      <div class="data-rows">
+        <div class="data-row">
+          <div class="data-cell"><span class="cell-label">Preventive</span></div>
+          <div class="data-cell"><span class="cell-text">Time-based routine maintenance</span></div>
+          <div class="data-cell"><span class="cell-text">Time-based routine maintenance</span></div>
+        </div>
+        <div class="data-row">
+          <div class="data-cell"><span class="cell-label">Predictive</span></div>
+          <div class="data-cell"><span class="cell-text">Uses data and sensors to predict failures</span></div>
+          <div class="data-cell"><span class="cell-text">Uses data and sensors to predict failures</span></div>
+        </div>
+        <div class="data-row">
+          <div class="data-cell"><span class="cell-label">CBM</span></div>
+          <div class="data-cell"><span class="cell-text">Maintenance based on asset condition</span></div>
+          <div class="data-cell"><span class="cell-text">Maintenance based on asset condition</span></div>
+        </div>
+        <div class="data-row">
+          <div class="data-cell"><span class="cell-label">CBM</span></div>
+          <div class="data-cell"><span class="cell-text">Maintenance based on asset condition</span></div>
+          <div class="data-cell"><span class="cell-text">Maintenance based on asset condition</span></div>
+        </div>
+        <div class="data-row">
+          <div class="data-cell"><span class="cell-label">RCM</span></div>
+          <div class="data-cell"><span class="cell-text">Combines all approaches based on risk and reliability</span></div>
+          <div class="data-cell"><span class="cell-text">Combines all approaches based on risk and reliability</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

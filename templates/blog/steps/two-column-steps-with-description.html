@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Steps – Two Column with Description</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #111827;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: calc(1200px - 64px);
+      height: calc(880px - 64px);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      gap: 0;
+    }
+
+    .left-panel {
+      width: 420px;
+      flex-shrink: 0;
+      background: #E2E5EE;
+      border-radius: 16px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-right: 16px;
+    }
+
+    .logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      color: #111827;
+    }
+
+    .title {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      color: #111827;
+      line-height: 1.2;
+      margin-top: 32px;
+      flex: 1;
+    }
+
+    .orb {
+      width: 60px;
+      height: 60px;
+      background: #111827;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+    .orb::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 6px,
+        rgba(255,255,255,0.15) 6px,
+        rgba(255,255,255,0.15) 7px
+      );
+    }
+
+    .right-panel {
+      flex: 1;
+      background: #E2E5EE;
+      border-radius: 16px;
+      padding: 32px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      flex: 1;
+      position: relative;
+    }
+
+    .timeline-item:not(:last-child) {
+      border-bottom: 1px solid #C8CDD8;
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+    }
+
+    .timeline-left {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      padding-top: 2px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: #5B35D5;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .timeline-content {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .step-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      color: #111827;
+    }
+
+    .step-desc {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: #62748E;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="card">
+      <div class="left-panel">
+        <span class="logo">facilio</span>
+        <div class="title">Steps to Successfully Adopt an IWMS</div>
+        <div class="orb"></div>
+      </div>
+      <div class="right-panel">
+        <div class="timeline-item">
+          <div class="timeline-left"><div class="dot"></div></div>
+          <div class="timeline-content">
+            <div class="step-title">Planning &amp; Preparation</div>
+            <div class="step-desc">Define scope, team, and objectives</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-left"><div class="dot"></div></div>
+          <div class="timeline-content">
+            <div class="step-title">Stakeholder Alignment</div>
+            <div class="step-desc">Engage key stakeholders and set expectations</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-left"><div class="dot"></div></div>
+          <div class="timeline-content">
+            <div class="step-title">Data Collection</div>
+            <div class="step-desc">Gather existing asset and facility data</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-left"><div class="dot"></div></div>
+          <div class="timeline-content">
+            <div class="step-title">System Configuration</div>
+            <div class="step-desc">Configure modules to match workflows</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-left"><div class="dot"></div></div>
+          <div class="timeline-content">
+            <div class="step-title">Pilot Testing</div>
+            <div class="step-desc">Run a pilot with a subset of facilities</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-left"><div class="dot"></div></div>
+          <div class="timeline-content">
+            <div class="step-title">Training &amp; Change Management</div>
+            <div class="step-desc">Train users and manage adoption</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-left"><div class="dot"></div></div>
+          <div class="timeline-content">
+            <div class="step-title">Go-Live &amp; Optimization</div>
+            <div class="step-desc">Launch fully and refine over time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

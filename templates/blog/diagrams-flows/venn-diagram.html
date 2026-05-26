@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Venn Diagram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #E2E5EE;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px;
+    }
+
+    .logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      color: #111827;
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 48px;
+      max-width: 800px;
+    }
+
+    .venn-container {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .venn-svg-wrap {
+      position: relative;
+      width: 700px;
+      height: 360px;
+    }
+
+    .venn-svg-wrap svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .left-content {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 220px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .right-content {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 220px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+      text-align: right;
+    }
+
+    .center-content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      text-align: center;
+    }
+
+    .area-icon {
+      font-size: 20px;
+      color: #5B35D5;
+    }
+
+    .area-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: #111827;
+    }
+
+    .area-item {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: #314158;
+    }
+
+    .center-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <span class="logo">facilio</span>
+    <div class="title">Top AI Use Cases in Facility Management 2025</div>
+    <div class="venn-container">
+      <div class="venn-svg-wrap">
+        <svg viewBox="0 0 700 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Left circle -->
+          <circle cx="270" cy="180" r="200" fill="#D0D4E0" opacity="0.8"/>
+          <!-- Right circle -->
+          <circle cx="430" cy="180" r="200" fill="#D0D4E0" opacity="0.8"/>
+          <!-- Intersection (violet) using clip -->
+          <clipPath id="leftClip">
+            <circle cx="270" cy="180" r="200"/>
+          </clipPath>
+          <circle cx="430" cy="180" r="200" fill="#5B35D5" opacity="0.85" clip-path="url(#leftClip)"/>
+        </svg>
+        <div class="left-content">
+          <div class="area-icon">$</div>
+          <div class="area-title">Financial Lens</div>
+          <div class="area-item">Rent</div>
+          <div class="area-item">Refinancing</div>
+          <div class="area-item">Portfolio Growth</div>
+        </div>
+        <div class="right-content">
+          <div class="area-icon">$</div>
+          <div class="area-title">Operations</div>
+          <div class="area-item">Maintenance</div>
+          <div class="area-item">Energy Costs</div>
+          <div class="area-item">Compliance</div>
+        </div>
+        <div class="center-content">
+          <div class="center-label">Asset Value</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

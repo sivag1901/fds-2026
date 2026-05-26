@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>7-Card Grid with Icons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #111827;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .outer-container {
+      width: calc(1200px - 32px);
+      height: calc(880px - 32px);
+      background: #111827;
+      border-radius: 24px;
+      padding: 16px;
+    }
+
+    .grid {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .cell {
+      background: #E2E5EE;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .cell-center {
+      background: #5B35D5;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-align: center;
+    }
+
+    .cell-icon {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      color: #5B35D5;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: #314158;
+      line-height: 1.4;
+    }
+
+    .center-logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: -0.3px;
+      color: #fff;
+    }
+
+    .center-badge {
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .center-name {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      color: #fff;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="outer-container">
+      <div class="grid">
+        <div class="cell">
+          <div class="cell-icon">∿</div>
+          <div class="stat-label">Government agencies</div>
+        </div>
+        <div class="cell">
+          <div class="cell-icon">∿</div>
+          <div class="stat-label">Healthcare facilities</div>
+        </div>
+        <div class="cell">
+          <div class="cell-icon">∿</div>
+          <div class="stat-label">Commercial real estate</div>
+        </div>
+        <div class="cell">
+          <div class="cell-icon">∿</div>
+          <div class="stat-label">Manufacturing plants</div>
+        </div>
+        <div class="cell-center">
+          <div class="center-logo">facilio</div>
+          <div class="center-badge">★</div>
+          <div class="center-name">Computer-Aided Facility Management (CaFM)</div>
+        </div>
+        <div class="cell">
+          <div class="cell-icon">∿</div>
+          <div class="stat-label">Retail chains</div>
+        </div>
+        <div class="cell">
+          <div class="cell-icon">∿</div>
+          <div class="stat-label">Educational institutions</div>
+        </div>
+        <div class="cell">
+          <div class="cell-icon">∿</div>
+          <div class="stat-label">Hospitality sector</div>
+        </div>
+        <div class="cell">
+          <div class="cell-icon">∿</div>
+          <div class="stat-label">Data centers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

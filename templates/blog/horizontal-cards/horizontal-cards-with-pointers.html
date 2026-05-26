@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Horizontal Cards with Pointers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #111827;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 48px 40px;
+    }
+
+    .logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+      color: #fff;
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 32px;
+      max-width: 800px;
+    }
+
+    .cards-container {
+      width: 100%;
+      flex: 1;
+      background: #1E2B3D;
+      border-radius: 20px;
+      padding: 16px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .card {
+      flex: 1;
+      background: #E2E5EE;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .arrow-icon {
+      font-size: 20px;
+      color: #5B35D5;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .img-placeholder {
+      flex: 1;
+      background: #C8CDD8;
+      border-radius: 8px;
+      min-height: 180px;
+    }
+
+    .card-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: #111827;
+    }
+
+    .bullet-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bullet-item {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: #314158;
+      padding: 8px 0;
+      border-bottom: 1px solid #BCC3CF;
+    }
+
+    .bullet-item:first-child {
+      border-top: 1px solid #BCC3CF;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <span class="logo">facilio</span>
+    <div class="title">Top AI Use Cases in Facility Management 2025</div>
+    <div class="cards-container">
+      <div class="card">
+        <div class="arrow-icon">↗</div>
+        <div class="img-placeholder"></div>
+        <div class="card-title">PDSA Cycle</div>
+        <div class="bullet-list">
+          <div class="bullet-item">Plan-Do-Study-Act</div>
+          <div class="bullet-item">Plan-Do-Study-Act</div>
+          <div class="bullet-item">Plan-Do-Study-Act</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="arrow-icon">↗</div>
+        <div class="img-placeholder"></div>
+        <div class="card-title">PDSA Cycle</div>
+        <div class="bullet-list">
+          <div class="bullet-item">Plan-Do-Study-Act</div>
+          <div class="bullet-item">Plan-Do-Study-Act</div>
+          <div class="bullet-item">Plan-Do-Study-Act</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

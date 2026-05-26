@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Cycle Diagram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #5B35D5;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    .logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -0.3px;
+      color: #fff;
+      margin-bottom: 0;
+      z-index: 2;
+    }
+
+    .diagram-area {
+      flex: 1;
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .center-pill {
+      width: 700px;
+      height: 220px;
+      background: #1E2638;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .pill-title {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 32px;
+      color: #fff;
+      text-align: center;
+      line-height: 1.2;
+      max-width: 580px;
+    }
+
+    .orbit-svg {
+      position: absolute;
+      z-index: 1;
+    }
+
+    .orbit-label {
+      position: absolute;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <span class="logo">facilio</span>
+    <div class="diagram-area">
+      <!-- Orbit SVG -->
+      <svg class="orbit-svg" width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Ellipse orbit path -->
+        <ellipse cx="450" cy="300" rx="400" ry="240" stroke="#7B5CE8" stroke-width="1.5" fill="none"/>
+
+        <!-- 3 diamonds on top arc -->
+        <!-- Top-left ~220deg from right = left side top -->
+        <g transform="translate(82,130) rotate(45)">
+          <rect x="-7" y="-7" width="14" height="14" fill="#5B35D5" stroke="#8B6EE8" stroke-width="1.5"/>
+        </g>
+        <!-- Top-center ~270deg = top center -->
+        <g transform="translate(450,62) rotate(45)">
+          <rect x="-7" y="-7" width="14" height="14" fill="#5B35D5" stroke="#8B6EE8" stroke-width="1.5"/>
+        </g>
+        <!-- Top-right ~320deg -->
+        <g transform="translate(818,130) rotate(45)">
+          <rect x="-7" y="-7" width="14" height="14" fill="#5B35D5" stroke="#8B6EE8" stroke-width="1.5"/>
+        </g>
+
+        <!-- 3 diamonds on bottom arc -->
+        <!-- Bottom-left -->
+        <g transform="translate(82,470) rotate(45)">
+          <rect x="-7" y="-7" width="14" height="14" fill="#5B35D5" stroke="#8B6EE8" stroke-width="1.5"/>
+        </g>
+        <!-- Bottom-center -->
+        <g transform="translate(450,538) rotate(45)">
+          <rect x="-7" y="-7" width="14" height="14" fill="#5B35D5" stroke="#8B6EE8" stroke-width="1.5"/>
+        </g>
+        <!-- Bottom-right -->
+        <g transform="translate(818,470) rotate(45)">
+          <rect x="-7" y="-7" width="14" height="14" fill="#5B35D5" stroke="#8B6EE8" stroke-width="1.5"/>
+        </g>
+      </svg>
+
+      <div class="center-pill">
+        <div class="pill-title">How AI in Facility Management Works</div>
+      </div>
+
+      <!-- Top labels above diamonds -->
+      <div class="orbit-label" style="left: calc(50% - 450px + 60px); top: calc(50% - 300px + 86px);">Insights</div>
+      <div class="orbit-label" style="left: calc(50% - 30px); top: calc(50% - 300px + 18px);">Insights</div>
+      <div class="orbit-label" style="left: calc(50% + 450px - 840px + 784px); top: calc(50% - 300px + 86px);">Insights</div>
+
+      <!-- Bottom labels below diamonds -->
+      <div class="orbit-label" style="left: calc(50% - 450px + 60px); top: calc(50% - 300px + 500px);">Insights</div>
+      <div class="orbit-label" style="left: calc(50% - 30px); top: calc(50% - 300px + 570px);">Insights</div>
+      <div class="orbit-label" style="left: calc(50% + 450px - 840px + 784px); top: calc(50% - 300px + 500px);">Insights</div>
+    </div>
+  </div>
+</body>
+</html>

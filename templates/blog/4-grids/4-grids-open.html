@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>4 Grids Open</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #E2E5EE;
+      overflow: hidden;
+      position: relative;
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      color: #111827;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    .cell {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .cell:nth-child(1) {
+      border-right: 1px solid #BCC3CF;
+      border-bottom: 1px solid #BCC3CF;
+    }
+    .cell:nth-child(2) {
+      border-bottom: 1px solid #BCC3CF;
+    }
+    .cell:nth-child(3) {
+      border-right: 1px solid #BCC3CF;
+    }
+
+    .check-icon {
+      width: 28px;
+      height: 28px;
+      background: #16A34A;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .cell-text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: #314158;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <span class="logo">facilio</span>
+    <div class="title">Top AI Use Cases in Facility Management 2025</div>
+    <div class="grid">
+      <div class="cell">
+        <div class="check-icon">✓</div>
+        <div class="cell-text">Lower energy bills by identifying waste and inefficiencies</div>
+      </div>
+      <div class="cell">
+        <div class="check-icon">✓</div>
+        <div class="cell-text">Prevent costly breakdowns with predictive maintenance alerts</div>
+      </div>
+      <div class="cell">
+        <div class="check-icon">✓</div>
+        <div class="cell-text">Improve space utilization with real-time occupancy data</div>
+      </div>
+      <div class="cell">
+        <div class="check-icon">✓</div>
+        <div class="cell-text">Automate compliance tracking and stay audit-ready always</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

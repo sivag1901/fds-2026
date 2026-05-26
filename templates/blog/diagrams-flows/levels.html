@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Levels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #111827;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap: 16px;
+    }
+
+    .left-panel {
+      width: 400px;
+      flex-shrink: 0;
+      background: #E2E5EE;
+      border-radius: 16px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      color: #111827;
+    }
+
+    .left-title {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      color: #111827;
+      line-height: 1.2;
+      margin-top: 24px;
+      flex: 1;
+    }
+
+    .orb {
+      width: 60px;
+      height: 60px;
+      background: #111827;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+    .orb::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 6px,
+        rgba(255,255,255,0.15) 6px,
+        rgba(255,255,255,0.15) 7px
+      );
+    }
+
+    .right-panel {
+      flex: 1;
+      background: #111827;
+      border-radius: 16px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .level {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .level-arch {
+      border-radius: 999px 999px 0 0;
+      height: 28px;
+    }
+
+    .level-body {
+      border-radius: 0 0 12px 12px;
+      padding: 16px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .level-3 .level-arch { width: 280px; background: #7B5CE8; }
+    .level-3 .level-body { width: 280px; background: #7B5CE8; }
+    .level-2 .level-arch { width: 340px; background: #5B35D5; }
+    .level-2 .level-body { width: 340px; background: #5B35D5; }
+    .level-1 .level-arch { width: 400px; background: #4A27C2; }
+    .level-1 .level-body { width: 400px; background: #4A27C2; }
+
+    .level-name {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .level-desc {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: rgba(255,255,255,0.8);
+      text-align: center;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="container">
+      <div class="left-panel">
+        <span class="logo">facilio</span>
+        <div class="left-title">Top AI Use Cases in Facility Management 2025</div>
+        <div class="orb"></div>
+      </div>
+      <div class="right-panel">
+        <div class="level level-3">
+          <div class="level-arch"></div>
+          <div class="level-body">
+            <div class="level-name">Level 3</div>
+            <div class="level-desc">Full professional study with investment-grade recommendations</div>
+          </div>
+        </div>
+        <div class="level level-2">
+          <div class="level-arch"></div>
+          <div class="level-body">
+            <div class="level-name">Level 2</div>
+            <div class="level-desc">Detailed energy audit with savings calculations and site survey</div>
+          </div>
+        </div>
+        <div class="level level-1">
+          <div class="level-arch"></div>
+          <div class="level-body">
+            <div class="level-name">Level 1</div>
+            <div class="level-desc">Walk-through audit identifying low-cost and no-cost improvements</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

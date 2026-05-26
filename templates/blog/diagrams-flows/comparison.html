@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Comparison</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; }
+
+    .canvas {
+      width: 1200px;
+      height: 880px;
+      background: #111827;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      width: calc(1200px - 48px);
+      height: calc(880px - 48px);
+      background: #1E2638;
+      border-radius: 20px;
+      padding: 40px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      color: #fff;
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 32px;
+    }
+
+    .columns {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      gap: 16px;
+    }
+
+    .col-left {
+      flex: 1;
+      background: #E2E5EE;
+      border-radius: 16px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col-right {
+      flex: 1;
+      background: #5B35D5;
+      border-radius: 16px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .competitor-badge {
+      display: inline-flex;
+      align-items: center;
+      border: 1.5px solid #BCC3CF;
+      border-radius: 999px;
+      padding: 8px 20px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #111827;
+      align-self: flex-start;
+      margin-bottom: 0;
+    }
+
+    .facilio-logo {
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    .spacer {
+      flex: 1;
+    }
+
+    .items-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-left {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #314158;
+      padding: 14px 0;
+      border-bottom: 1px solid #BCC3CF;
+    }
+
+    .item-left:first-child {
+      border-top: 1px solid #BCC3CF;
+    }
+
+    .items-right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-right {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .item-right:first-child {
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="card">
+      <span class="logo">facilio</span>
+      <div class="title">Top AI Use Cases in Facility Management 2025</div>
+      <div class="columns">
+        <div class="col-left">
+          <div class="competitor-badge">LOGO</div>
+          <div class="spacer"></div>
+          <div class="items-left">
+            <div class="item-left">Easy-to-use</div>
+            <div class="item-left">Cloud-based deployment</div>
+            <div class="item-left">Basic reporting features</div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="facilio-logo">facilio</div>
+          <div class="spacer"></div>
+          <div class="items-right">
+            <div class="item-right">Easy-to-use</div>
+            <div class="item-right">Cloud-based with AI-powered insights</div>
+            <div class="item-right">Advanced analytics and live dashboards</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
